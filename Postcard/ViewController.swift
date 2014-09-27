@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Postcard
 //
-//  Created by Administrator on 2014-09-26.
+//  Created by Khang Huynh on 2014-09-26.
 //  Copyright (c) 2014 Khang Huynh. All rights reserved.
 //
 
@@ -27,6 +27,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func sendMailButtonPressed(sender: UIButton) {
+        //Code will evaluate when we press the button
         messageLabel.hidden = false
         messageLabel.text = enterMessageTextField.text
         messageLabel.textColor = UIColor.redColor()
@@ -34,6 +35,7 @@ class ViewController: UIViewController {
         enterMessageTextField.resignFirstResponder()
         
         mailButton.setTitle("Mail Sent", forState: UIControlState.Normal)
+        
     }
 
 }
